@@ -1,0 +1,329 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --color--fonts-title: #b52184;
+  --color--fonts-text: #312d64;
+  --color--pagetwo-footer: #343193;
+  
+}
+
+body{
+  font-family:'Mulish', sans-serif;
+  margin: auto;
+  font-size: 62.5%;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  
+}
+
+header{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+main{
+  display: flex;  
+  max-width: 100%;
+}
+
+
+.Principal{
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+}
+
+
+.Principal h1{
+  font-size:1.7rem;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 1.7rem;
+  color: var(--color--fonts-title);
+}
+
+.Principal h2{
+  font-weight:600;
+  font-size: 1.0rem;
+  color: var(--color--fonts-text);
+}
+
+
+.Principal #btn{
+  margin-top: 3.7rem;
+}
+
+.pageTwo{
+  background-color: var(--color--pagetwo-footer);
+  width: 100%;
+  padding: 0.1rem 0rem 2.5rem 0.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 5.0rem;
+}
+
+.card{
+  height: 100%;
+  max-width: 90%;
+  margin-top: 1.9rem;
+  border-radius: 9px;
+  padding: 1.3rem 1.3rem 1.8rem;
+  background-color: white;
+  
+}
+
+
+
+.card img{
+  padding-top: 1.0rem;
+  height: 4.5rem;
+}
+
+.card h1{
+  color: var(--color--fonts-title);
+  font-size: 1.7rem;
+  font-weight: 900;
+  padding-top:1.0rem;
+}
+
+.card p{
+  max-width: fit-content;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  color: var(--color--fonts-text);
+  width: 14.5rem;
+}
+
+
+
+.formula{
+  padding: 4.0rem 3.8rem ;
+  width: 100%;
+}
+
+.formula h1{
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--color--fonts-title);
+}
+
+.btnOne{
+  margin-top: 2.0rem;
+}
+
+.btnOne input{
+  background-image:url(assets/person.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-position: 0.6rem;
+  background-size: 1.4rem;
+  width: 100%;
+  height: 2.8rem;
+  padding-left: 2.3rem;
+  border:1px solid  var(--color--fonts-text);
+  border-radius: 0.8rem;
+}
+
+.btnTwo input{
+  background-image:url(assets/at.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-position: 0.6rem;
+  background-size: 1.4rem;
+  width: 100%;
+  height: 2.8rem;
+  padding-left: 2.3rem;
+  border:1px solid  var(--color--fonts-text);
+  border-radius: 0.8rem;
+}
+
+.btnOne + .btnTwo{
+  margin-top: 1.3rem;
+}
+
+textarea{
+  border:1px solid  var(--color--fonts-text);
+  height: 7.0rem;
+  width: 100%;
+  margin-top:1.0rem ;
+  padding: 0.7rem ;
+  border-radius: 0.8rem;
+}
+
+.btnclick input{
+  background-color: var(--color--pagetwo-footer);
+  font-family: 'Mulish', sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width:8.0rem ;
+  height: 2.5rem;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+  margin-top: 2.0rem;
+  cursor: pointer;
+  
+}
+
+::placeholder {
+  color: var(--color--fonts-text);
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+}
+
+footer{
+  background-color: var(--color--pagetwo-footer);
+  color: white;
+  padding-top: 1.0rem;
+  font-size: 1.0rem;
+  text-align: center;
+  height: 3.3rem;
+}
+
+
+@media  (min-width:700px) {
+    
+  body{
+    font-family: 'Mulish', sans-serif;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .Principal{
+    display: flex;
+    margin-top: 17%;
+    padding-left: 10%;
+    justify-content: center;
+  }
+
+  .Principal h1{
+    font-size: 2.6rem;
+    margin-left: 10%;
+    width: 100%;
+
+  }
+
+  .Principal strong{
+    font-size: 1.7rem ;
+    width: 120%;
+    font-weight: 600;
+    margin-left: 10%;
+    text-align: left;
+    padding-left: 0.3rem;
+    color: var(--color--fonts-text);
+  }
+
+  .Principal #btn{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 50%;
+    height: 5.3rem;
+    width:2.8rem ;
+    /* border: 1px solid red; */
+  }
+
+
+  #astronaut{
+    padding-right: 2%;
+    width: 50%;
+  }
+
+  .pageTwo{
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.8rem 1.9rem 3.5rem 8.9rem;
+  }
+
+  .card{
+    width: 25%;
+    border-radius:1.0rem ;
+  }
+
+  .card h1{
+    margin-top: 0.8rem;
+  }
+
+  .card p{
+    font-size: 1.0rem;
+  }
+
+  .card img{
+    height: 6.0rem ;
+  }
+
+  .card + .card + .card{
+    margin-right: 7.5rem;
+  }
+
+  .formula{
+    background-image: url(assets/bolls.png);
+    background-repeat: no-repeat;
+    background-position: right 100% ;
+    padding-left: 13%;
+  }
+
+  .formula h1{
+    font-size: 2.2rem;
+  }
+
+  .btnOne input{
+    width: 30.9rem;
+  }
+
+  .btnTwo input{
+    width: 30.9rem;
+  }
+
+  textarea{
+    width: 30.9rem;
+  }
+
+
+
+
+
+
+
+    
+}
+
+
+
+  
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
