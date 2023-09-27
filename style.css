@@ -56,7 +56,7 @@ main{
   color: var(--color--fonts-title);
 }
 
-.Principal h2{
+.Principal strong{
   font-weight:600;
   font-size: 1.0rem;
   color: var(--color--fonts-text);
